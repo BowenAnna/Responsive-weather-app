@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /*information blocks*/
+  --main: rgba(161, 207, 250, 0.9); /* #a1cffa;
+  /*blocks border color*/
+  --border: rgb(60, 138, 162);
+  /*footer, navigation color*/
+  --blue: rgb(85, 137, 189); 
+  /*city title, navigation buttons color*/
+  --secondary: rgba(42, 126, 253, 0.5); 
+  /*temperature max*/
+  --max: rgb(154, 37, 37);
+  /*temperature min*/
+  --min: rgb(37, 138, 238); 
+}
+
+.App {
+  height: 100%;
+  text-align: center;
+}
+
+/* Daily Styling **************************/
+.daily-main-div{
+margin: 50px auto;
+}
+
+.daily-top-div {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0;
+  background-color: var(--main);
+}
+
+.daily-bottom-div {
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-top: 50px;
+  background-color: var(--main);
+}
+
+.daily-city-title {
+  padding: 0;
+  height: 50px;
+  background-color: var(--secondary);
+  color: white;
+  justify-content: flex-start;
+  border-radius: 10px 10px 0 0;
+  margin-top: 0;
+}
+.daily-side-by-side .half-one{width: 70%;}
+.daily-side-by-side .half-two{
+  width: 30%;
+}
+.daily-side-by-side {
+ margin: 20px;
+}
+
+.daily-large-icon{
+  height: 150px;
+  }
+
+.daily-small-icon {
+    height: 60px;
+  }
+
+.daily-enlarged{
+    height: 100px;
+  }
+
+  .daily-params {
+    display: flex;
+  }
+
+  #daily-temp {
+    font-size: 70px;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+
+/*Hourly Styling****************************/
+.hourly-div-blocks {
+  border-bottom: 1px solid black;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.hourly-main-block {
+  display: block;
+  position: relative;
+  /* width: 80%; */
+  margin: 50px auto 150px auto;
+}
+
+div.hourly-div-blocks:nth-of-type(24) {
+  border-bottom: none;
+}
+
+.two-elements{
+  display: flex;
+  align-items: center;
+}
+.bottom-div{
+  height: 100px;
+}
+.hourly-main-block > .bottom-div{
+  height: 50px;
+}
+
+/* Footer Styling***************************/
+.footer {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  width: 100%;
+  bottom: 0;
+  height: 50px;}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+
+.main-body {
+  margin: 50px auto;
+}
+.weather-list {
+  display: flex;
+  flex-direction: column;  
+}
+
+.weather-raindrop-img{
+  width: 10px;
+  height: 15px;
+  margin:30px 7px 0 0;
+}
+.weather-icon-image{
+  margin-top: 20px;
+}
+
+.shown{width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid black;
+}
+
+.notshown{
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-top: 50px;
+  background-color: var(--main);
+}
+
+.weather-list td {
+  height: 25px;
+}
+.weather-list tr {
+  height: 15px !important;
+}
+.hidden {
+  display: none;
+}
+
+.days-blocks{
+  margin: 20px 0;
+}
+.days-blocks:nth-child(10){
+  border-bottom: none;
+}
+.main-body > .bottom-div{
+  height: 50px;
+}
+
+.two-elements{
+  display: flex;
+  align-items: center;
+}
+
+.daily-side-by-side {
+  width: 50%;
+ margin: 20px;
+}
